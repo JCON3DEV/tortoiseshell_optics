@@ -1,0 +1,238 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: blue;
+  font-family: Helvetica;
+  font-size:18px;
+  line-height: 1.4;
+  display: flex;
+
+}
+
+@media only screen and (max-width:2900px) and (min-width:1025px{
+  body{
+    background-color:green;/*for debugging*/
+    font-size:1rem;
+    display;flex;
+    flex-flow: column nowrap;
+    min-width:1025px;
+    max-width:2900px;
+  }
+}
+
+@media only screen and (max-width:1024px) and (min-width:481px{
+  body{
+    background-color:green;/*for debugging*/
+    font-size:1rem;
+    display;flex;
+    flex-flow: column nowrap;
+    min-width:479px;
+    max-width:1024px;
+  }
+  header{
+    position: static;
+    width:100%;
+    background-color:cadet-blue;
+    justify-content: space-between;
+    padding:1rem 2rem;
+    display:inline-flex;
+  }
+  .nav{
+    display:inline-flex;
+    text-decoration: none;
+  }
+  .nav_mobile{
+    display:none;
+  }
+  /*end of tablet header*/
+  .banner{
+    background-image: url("../resources/images/glasses-bg.png");
+    position: center;
+    flex: flex-end;
+    height:30rem;
+  }
+  .banner h1{
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    padding:0.75 4rem;
+    background-color: Azure;
+    text-transform:capitalize;
+    font-size: 1.33rem;
+    font-weight: bold;
+  }
+  /*end of tablet banner*/
+  .icon_container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 3rem 3rem;
+  }
+  .exams.
+  .fittings,
+  .delivery{
+    height:8rem;
+    width:5rem;
+    flex-direction: column;
+  }
+  /*end of tablet icon_container*/
+  .info{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    width:100%;
+  }
+  .philosophy{
+    display: flex;
+    flex-flow: column nowrap;
+    width:35%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .philosophy h2{
+    font-family: Helvetica;
+    font-weight:bold;
+    font-size: 1rem;
+    background-color: cadetblue;
+    padding:0.5rem 1.25rem;
+    width:10rem;
+  }
+  .appointments{
+    display: flex;
+    flex-flow: column nowrap;
+    width:35%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .appointments h2{
+    font-family: Helvetica;
+    font-weight:bold;
+    font-size: 1rem;
+    background-color: cadetblue;
+    padding:0.5rem 1.25rem;
+    width:10rem;
+  }
+  .philosophy p,
+  .appointments p{
+    margin-bottom: 5rem;
+  }
+  /*end of tablet info*/
+  .footer{
+    background-color: pink;/*for debugging*/
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+    height:9.5rem;
+
+  }
+  .footer img{
+    height:1.5rem;
+    margin:4rem 1rem 4rem 4rem;
+  }
+}
+
+
+
+
+@media only screen and (max-width:480px){
+  body{
+    background-color:Azure;/*for debugging*/
+    font-size:0.77rem;
+    display;flex;
+    flex-flow: column nowrap;
+    min-width:479px;
+  }
+  header{
+    position: static;
+    width:100%;
+    background-color:cadet-blue;
+    justify-content: space-between;
+  }
+  header img {
+    height:1.5rem;
+  }
+  header h1,
+  .nav{
+    display:none;
+  }
+  .white_logo{
+    padding-left: 2rem;
+  }
+  .nav_mobile{
+    padding: 1rem 2rem;
+  }
+
+/*end of mobile header*/
+  .banner{
+    background-image: url("../resources/images/glasses-bg.png");
+    position: center;
+    flex: flex-end;
+  }
+  .banner p {
+    margin-bottom:3rem;
+    padding: 1rem 0;
+    width:100%;
+    background-color: white;
+    text-align: center;
+    font-size:1rem;
+    font-weight:bold;
+    text-transform: capitalize;
+  }
+/*end of mobile banner*/
+.icon_container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .exams.
+  .fittings,
+  .delivery{
+    border: 1px solid red;/*for debugging*/
+    font-size: 0.77rem;
+  }
+  /*end of mobile icon_container*/
+  .info{
+    flex-flow: column nowrap;
+  }
+  .philosophy{
+    flex-direction: row;
+    width:100%;
+  }
+  h2 {
+    justify-content: center;
+    background-color:cadetblue
+    width:100%;
+    font-weight:bold;
+    font-size: 1rem;
+    padding-top: 0.77rem;
+    padding-bottom: 0.77rem;
+    color:white;
+    text-transform: capitalize;
+  }
+  .philosophy p{
+    background-color:Azure;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+
+  .appointments{
+    flex-direction: row;
+    width:100%;
+  }
+  .appointments p{
+    background-color:Azure;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+  /*end of info */
+  .black_logo{
+    justify-content: center;
+    align-items: center;
+  }
+  .footer p{
+    display:none;
+  }
+}
