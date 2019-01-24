@@ -255,14 +255,17 @@ body {
     align-items: flex-end;
     background-image: url("../resources/images_2/glasses-bg.png");
     background-size: cover;
+    background-position: 20%;
     position: relative;
+    top:-3rem;
     border: 1px solid white;/*for debugging*/
     height: 17rem;
-    top:-2.75rem;
+
   }
 
   .banner h1 {
-    margin-bottom:2rem;
+    position: relative;
+    margin-bottom: 2rem;
     padding: 1rem 0;
     width:100%;
     background-color: azure;
@@ -270,20 +273,95 @@ body {
     text-align: center;
     font-size:1rem;
     font-weight:bold;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
 /*end of mobile banner*/
 .icon_container{
+  display:flex;
   flex-direction: column;
   justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  font-size: 1rem;
+  margin:0 auto;
+  box-sizing: border-box;
 }
-  .exams.
-  .fittings,
-  .delivery{
-    border: 1px solid red;/*for debugging*/
-    font-size: 0.77rem;
-  }
+.exams.
+.fittings,
+.delivery{
+  height:8rem;
+  width:5rem;
+  flex-direction: column;
+}
+
+
+.exams {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid green;/*for debugging*/
+  width:30%;
+  height:8rem;
+  margin-top: 3.75rem;
+  margin-bottom:1.54rem;
+  font-size: 0.77rem;
+}
+.exams .exams_img{
+  background-image: url("../resources/images_2/paper-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid red;/*for debugging*/
+  width:10rem;
+  height:5rem;
+}
+.exams p{
+  padding-left: 1rem;
+}
+.fittings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid green;/*for debugging*/
+  width:30%;
+  height:8rem;
+  font-size: 0.77rem;
+  text-align: center;
+}
+.fittings_img{
+  background-image: url("../resources/images_2/ruler-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid red;/*for debugging*/
+  width:10rem;
+  height:5rem;
+}
+
+
+.delivery{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid green;/*for debugging*/
+  width:30%%;
+  height:8rem;
+  margin-bottom: 3.75rem;
+  margin-top:1.54rem;
+  font-size: 0.77rem;
+}
+.delivery_img{
+  background-image: url("../resources/images_2/truck-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid red;/*for debugging*/
+  width:10rem;
+  height:5rem;
+}
   /*end of mobile icon_container*/
   .info{
     flex-flow: column nowrap;
@@ -294,6 +372,7 @@ body {
   }
   .philosophy h2,
   .appointments h2 {
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color:cadetblue;
@@ -303,7 +382,7 @@ body {
     padding-top: 0.77rem;
     padding-bottom: 0.77rem;
     color:white;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
   .philosophy p{
     background-color:Azure;
