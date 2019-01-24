@@ -59,6 +59,7 @@ body {
   /*end of tablet header*/
   .banner{
     background-image: url("../resources/images_2/glasses-bg.png");
+    background-size: cover;
     position: center;
     flex: flex-end;
     height:30rem;
@@ -211,43 +212,61 @@ body {
 
 @media only screen and (max-width:480px){
   body{
-    background-color:Azure;/*for debugging*/
+    background-color:grey;/*for debugging*/
     font-size:0.77rem;
     display;flex;
     flex-flow: column nowrap;
     min-width:479px;
+    width:100%;
+    border: 3px solid red;/*for debugging*/
   }
-  header{
+  .header{
+    display:inline-flex;
+    justify-content: space-between;
+    box-sizing: border-box;
     position: static;
     width:100%;
-    background-color:cadet-blue;
-    justify-content: space-between;
+    background-color:cadetblue;
+    border: 1px solid red;/*for debugging*/
+    z-index: 1;
   }
-  header img {
-    height:1.5rem;
+  .header img {
+    border: 1px solid white;/*for debugging*/
+    display:flex;
+    margin: 0.66rem 2rem;
+    height:2rem;
+    width:5rem;
   }
-  header h1,
+  .header h1,
   .nav{
     display:none;
   }
   .white_logo{
-    padding-left: 2rem;
+    padding:0.3rem 0;
   }
   .nav_mobile{
     padding: 1rem 2rem;
+    font-size: 1rem;
   }
 
 /*end of mobile header*/
   .banner{
-    background-image: url("../resources/images/glasses-bg.png");
-    position: center;
-    flex: flex-end;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../resources/images_2/glasses-bg.png");
+    background-size: cover;
+    position: relative;
+    border: 1px solid white;/*for debugging*/
+    height: 17rem;
+    top:-2.75rem;
   }
-  .banner p {
-    margin-bottom:3rem;
+
+  .banner h1 {
+    margin-bottom:2rem;
     padding: 1rem 0;
     width:100%;
-    background-color: white;
+    background-color: azure;
+    color:black;
     text-align: center;
     font-size:1rem;
     font-weight:bold;
@@ -273,9 +292,11 @@ body {
     flex-direction: row;
     width:100%;
   }
-  h2 {
+  .philosophy h2,
+  .appointments h2 {
     justify-content: center;
-    background-color:cadetblue
+    align-items: center;
+    background-color:cadetblue;
     width:100%;
     font-weight:bold;
     font-size: 1rem;
@@ -302,11 +323,18 @@ body {
     font-size: 0.77rem;
   }
   /*end of info */
-  .black_logo{
+  .footer{
+    display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem 0;
+  }
+  .black_logo{
+    border: 1px solid red;/*for debugging*/
+    height:2rem;
   }
   .footer p{
     display:none;
+
   }
 }
