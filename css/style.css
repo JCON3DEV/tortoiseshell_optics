@@ -13,7 +13,7 @@ body {
 
 @media only screen and (max-width:2900px) and (min-width:1025px){
   body{
-    background-color:green;/*for debugging*/
+    background-color:orange;/*for debugging*/
     font-size:1rem;
     display;flex;
     flex-flow: column nowrap;
@@ -32,12 +32,12 @@ body {
     max-width:1024px;
   }
   header{
+    display:inline-flex;
     position: static;
     width:100%;
     background-color:cadet-blue;
     justify-content: space-between;
     padding:1rem 2rem;
-    display:inline-flex;
   }
   .nav{
     display:inline-flex;
@@ -48,7 +48,7 @@ body {
   }
   /*end of tablet header*/
   .banner{
-    background-image: url("../resources/images/glasses-bg.png");
+    background-image: url("../resources/images_2/glasses-bg.png");
     position: center;
     flex: flex-end;
     height:30rem;
@@ -78,8 +78,18 @@ body {
     width:5rem;
     flex-direction: column;
   }
+  .exams_img{
+    background-image: url("../resources/images_2/paper-icon.png")
+  }
+  .fittings_img{
+    background-image: url("../resources/images_2/ruler-icon.png")
+  }
+  .delivery_img{
+    background-image: url("./resources/images_2/truck-icon.png")
+  }
   /*end of tablet icon_container*/
   .info{
+    display:inline-flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     width:100%;
@@ -120,6 +130,7 @@ body {
   }
   /*end of tablet info*/
   .footer{
+    display: inline-flex;
     background-color: pink;/*for debugging*/
     justify-content: flex-start;
     align-items: center;
