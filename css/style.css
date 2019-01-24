@@ -20,18 +20,28 @@ body {
     min-width:1025px;
     max-width:2900px;
   }
-}
+  .header{
+    display:inline-flex;
+    position: static;
+    width:960px;
+    background-color:cadet-blue;
+    justify-content: space-between;
+    padding:1rem 2rem;
+    margin-top: 1rem;
+  }
+  .header .nav
+}/*end of fullscreen webpage*/
 
 @media only screen and (max-width:1024px) and (min-width:481px){
   body{
-    background-color:green;/*for debugging*/
+    background-color:Azure;/*for debugging*/
     font-size:1rem;
     display;flex;
     flex-flow: column nowrap;
     min-width:479px;
     max-width:1024px;
   }
-  header{
+  .header{
     display:inline-flex;
     position: static;
     width:100%;
@@ -65,11 +75,13 @@ body {
   }
   /*end of tablet banner*/
   .icon_container{
+    display: inline-flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 1rem;
     padding: 3rem 3rem;
+    box-sizing: border-box;
   }
   .exams.
   .fittings,
@@ -78,14 +90,64 @@ body {
     width:5rem;
     flex-direction: column;
   }
-  .exams_img{
-    background-image: url("../resources/images_2/paper-icon.png")
+
+
+  .exams {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;/*for debugging*/
+    width:25%;
+    height:8rem;
+  }
+  .exams .exams_img{
+    background-image: url("../resources/images_2/paper-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid red;/*for debugging*/
+    width:10rem;
+    height:5rem;
+  }
+
+  .fittings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;/*for debugging*/
+    width:25%;
+    height:8rem;
   }
   .fittings_img{
-    background-image: url("../resources/images_2/ruler-icon.png")
+    background-image: url("../resources/images_2/ruler-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid red;/*for debugging*/
+    width:10rem;
+    height:5rem;
+  }
+
+
+  .delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;/*for debugging*/
+    width:25%;
+    height:8rem;
   }
   .delivery_img{
-    background-image: url("./resources/images_2/truck-icon.png")
+    background-image: url("../resources/images_2/truck-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid red;/*for debugging*/
+    width:10rem;
+    height:5rem;
   }
   /*end of tablet icon_container*/
   .info{
